@@ -9,7 +9,7 @@
 <script>
 (function () {
   var cfg = {"posthogKey": "phc_nWn5Vdcb9bJkTck5qiYrJmJah5VqtZEWyAH2dXw95H6t", "posthogHost": "https://eu.i.posthog.com"};
-  var code = "chattio", target = "";
+  var code = "chattio", target = "https://testflight.apple.com/join/1xD7jN83";
   var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   try {
     var body = JSON.stringify({ api_key: cfg.posthogKey, event: "web_link_opened", distinct_id: "web-" + Math.random().toString(36).slice(2),

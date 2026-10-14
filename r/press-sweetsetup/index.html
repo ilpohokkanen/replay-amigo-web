@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Replay Amigo</title>
+<noscript><meta http-equiv="refresh" content="0; url=../../?ref=press-sweetsetup"></noscript>
+<script>
+(function () {
+  var cfg = {"posthogKey": "phc_nWn5Vdcb9bJkTck5qiYrJmJah5VqtZEWyAH2dXw95H6t", "posthogHost": "https://eu.i.posthog.com"};
+  var code = "press-sweetsetup", target = "https://testflight.apple.com/join/EtH1JcXK";
+  var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  try {
+    var body = JSON.stringify({ api_key: cfg.posthogKey, event: "web_link_opened", distinct_id: "web-" + Math.random().toString(36).slice(2),
+      properties: { $process_person_profile: false, $geoip_disable: true, code: code, ios: ios, launched: false } });
+    navigator.sendBeacon(cfg.posthogHost + "/i/v0/e/", new Blob([body], { type: "text/plain" }));
+  } catch (e) {}
+  location.replace(ios && target ? target : "../../?ref=press-sweetsetup");
+})();
+</script>
+</head>
+<body><p><a href="../../?ref=press-sweetsetup">Replay Amigo</a></p></body>
+</html>
