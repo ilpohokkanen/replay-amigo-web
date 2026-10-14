@@ -113,3 +113,4 @@ footer.bottom nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8p
 [data-l] { display: none; }
 html:not(.js) [data-l="en"] { display: revert; }
 html.l-en [data-l="en"], html.l-es [data-l="es"], html.l-pt [data-l="pt"] { display: revert; }
+html:not(.js) .shots[data-l="en"], html.l-en .shots[data-l="en"], html.l-es .shots[data-l="es"], html.l-pt .shots[data-l="pt"] { display: flex; }
